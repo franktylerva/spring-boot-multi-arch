@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: spring-boot-multi-arch
+  name: spring-boot-multi-arch
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-boot-multi-arch
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: spring-boot-multi-arch
+    spec:
+      containers:
+      - image: franktylerva/spring-boot-multi-arch
+        name: spring-boot-multi-arch
+        resources: {}
+        ports:
+        - containerPort: 8080
