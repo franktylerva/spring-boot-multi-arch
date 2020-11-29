@@ -28,6 +28,9 @@ metadata:
   creationTimestamp: null
   labels:
     app: spring-boot-multi-arch
+    kustomize.toolkit.fluxcd.io/checksum: 01368150a44ac55d9d9628a88b06f52ad2d3dd0a
+    kustomize.toolkit.fluxcd.io/name: webapp-common
+    kustomize.toolkit.fluxcd.io/namespace: flux-system
   name: spring-boot-multi-arch
 spec:
   ports:
