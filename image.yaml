@@ -1,0 +1,15 @@
+apiVersion: kpack.io/v1alpha1
+kind: Image
+metadata:
+  name: spring-boot-multi-arch
+  namespace: default
+spec:
+  tag: franktylerva/spring-boot-multi-arch-bp1
+  serviceAccount: service-account
+  builder:
+    name: my-builder
+    kind: Builder
+  source:
+    git:
+      url: https://github.com/franktylerva/spring-boot-multi-arch.git
+      revision: main
