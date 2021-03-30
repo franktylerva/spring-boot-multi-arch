@@ -15,6 +15,6 @@ public class Application {
 
 	@GetMapping("/")
 	public String hello() throws Exception {
-		return "Hello World! " + System.getProperty("os.arch");
+		return "Hello Frank! " + System.getProperty("os.arch");
 	}
 }
